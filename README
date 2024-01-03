@@ -1,0 +1,47 @@
+File: ex3a.c
+ ========================================
+ Writen by: Rotem Kashani , id = 209073352 , login = rotemkash 
+	    Mahmood Jazmawy , id= 211345277, login=Mahmoodja
+ The father defines an array of one hundred thousand cells and fills
+it in an acsending order.
+He does this by inserting into cell #0 a random value in the range
+between 0 and 10 (including 0, not including 10),
+and for each additional cell the value that was in the previous cell and
+another random value in the range 0..9 will be inserted. The father then gives
+birth to two children. Each child grills a million times a number between zero
+and a million (including 0 and not including a million), and searches for it in
+the array. Child A searches for the value serial search, child B searches for
+binary search. Each child measures how long it took him to complete the task
+and how much times it found a number. then it puts in the standard output
+s/b [number of found] [time it took]
+the father then reads the output using a pipe.
+The father calculates and displays two numbers (on one line, with a space
+between them): how long on average did the ten children who performed a serial
+search run, how long on average did the ten children who performed a binary
+search ran. Finally, the father presents in a separate line another figure
+(third): how long it took him to run from the moment he started,
+until he finished.
+after 10 runs the averege running time for ex1a is 2071 seconds and 
+the averege running time for ex3a is 718 seconds.
+Compile: gcc ex3a.c -Wall -o ex3a
+
+Run: ex3a 17
+
+
+File: ex3b.c 
+ ========================================
+ Writen by: Rotem Kashani , id = 209073352 , login = rotemkash 
+	    Mahmood Jazmawy , id= 211345277, login=Mahmoodja
+
+In this program the parent initializes an array and then creates 3 children.
+the parent runs 100 time in each iteration he calls the children. 
+each child draws random numbers until getting a prime one, then it sends
+it to the parent. the parent checks if the number is larger than all the 
+numbers in the array it adds it to the array, if not it doesn't.
+we keep doing this and creating an ascending prime numbers array.
+then the parent prints the array size and the min/max values in it
+then each child prints about how he performed, how many numbers he entered.
+
+Compile: gcc ex3b.c -Wall -o ex3b
+
+Run: ex3b
